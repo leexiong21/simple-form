@@ -1,13 +1,35 @@
-body {
-    font-family: Arial, sans-serif;
+
+body {  font-family: Arial, sans-serif;  }
+
+h1,h2,h3 {font-family: Arial, sans-serif;}
+p {font-family: Arial, sans-serif;}
+form {font-family: Arial, sans-serif; }
+fieldset { width: 350px;
+        border: 2px solid grey;
+        padding: 10px;  }
+legend { font-family: Arial, "Times New Roman", serif;
+        font-weight: bold; }
+fieldset label{display: inline;
+        float: none;     }
+label { display:block;
+        float: left;
+        width:120px;
+        text-align: right;
+        padding-right: 10px;  }
+
+input[type=submit]{margin-left: 130px;  }
+
+footer {padding: 15px 5px;
+        font-size: 0.8em;
+        color: #666666;  }
+
+@media only screen and (max-width: 480px) {
+    #wrapper {width: auto;  }
+    input[type=text]{width:100%;  }
+    textarea{width: 100%;}
+    label {  text-align: left;
+             float: none;}
+    input[type=submit]{margin-left: 0;  }
+
 }
 
-main {
-    padding: 5px;
-}
-
-footer {
-    padding: 15px 5px;
-    font-size: 0.8em;
-    color: #666666;
-}
